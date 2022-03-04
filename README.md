@@ -53,6 +53,7 @@ python3 ComputeMAP PaperScores/D/ PaperScores/D/ PaperScores/FRS_Info.json
 python3 ComputeMAP PaperScores/PS/ PaperScores/PS/ PaperScores/FRS_Info.json
  ```
 # Citation
-Please cite the following paper in publications and works that use the MAP metric:
+Please cite [1] in all publications and works that use this code.
 
+# Bibliography
 [1] M. Ferrara, A. Franco, D. Maltoni, and C. Busch, "Morph Attack Potential", in proceedings of the *IEEE International Workshop on Biometrics and Forensics (IWBF)*, Salzburg, Austria, April 2022.
