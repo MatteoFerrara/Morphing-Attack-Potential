@@ -7,7 +7,7 @@ This repository contains the Python source code to compute the Morph Attack Pote
 `ComputeMAP.py` contains a script to compute the MAP metric given the following input parameters:
 - *input_folder_path* - the folder containing a text file for each Face Recognition Systems (FRSs) involved containing the corresponding comparison scores;
 - *output_folder_path* - the folder path where the MAP metric values will be saved as text files;
-- *frs_info_file_path* - the path of a JSON file containing information about the involved FRSs.
+- *frs_info_file_path* - the path of a JSON file containing information about the evaluated FRSs.
 
 `PaperScores` is a folder containing the scores used to generate the results reported in the MAP paper useful to test the Python scripts.
 
@@ -24,12 +24,17 @@ where:
 
 Note that, to compute the MAP metric on multiple FRSs, the *morphID* and *subjectID* identifiers must be the same in the different score files.
 
-If something is not clear, we suggest to take a look to example files store into `PaperScores` folder.
-
+If something is not clear, we suggest to take a look to the score files stored into the `PaperScores` folder.
 
 # FRS information needed
 
-TODO
+To properly compute the MAP metric, a JSON file containing important information about all evaluated FRSs (*frs_info_file_path*) needs to be passed to the `ComputeMAP.py` script. 
+
+The information must be stored as a dictionary with an entry for each FRS. Each entry must be of the following format:
+- key - the *FRS name* string (the same name of the FRS score file stored into the *input_folder_path* folder);
+- item - a list containing the decision threshold of the FRS and a boolean to know whether the FRS returns a similarity (true) or a dissimilarity (false) score (e.g., [0.5,true]).
+
+If something is not clear, we suggest to take a look to the JSON file stored into the `PaperScores` folder.
 
 # How to run
 Clone the repository
