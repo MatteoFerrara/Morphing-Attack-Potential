@@ -5,15 +5,22 @@ This repository contains the Python source code to compute the Morph Attack Pote
 `MAP.py` provides the core functionalities to calculate the MAP metric.
 
 `ComputeMAP.py` contains a script to compute the MAP metric given the following input parameters:
-- 'input_folder_path' - a set of text files (stored into the same folder) containing the comparison scores obtained using one or more Face Recognition Systems (FRSs);
-- 'output_folder_path' - the folder path where the MAP metric values will be saved as text files;
-- 'frs_info_file_path' - the path of a JSON file containing information about the involved FRSs.
+- *input_folder_path* - the folder containing a text file for each Face Recognition Systems (FRSs) involved containing the corresponding comparison scores;
+- *output_folder_path* - the folder path where the MAP metric values will be saved as text files;
+- *frs_info_file_path* - the path of a JSON file containing information about the involved FRSs.
 
 `PaperScores` is a folder containing the scores used to generate the results reported in the MAP paper useful to test the Python scripts.
 
 # FRS score file text format
 
-For each FRS evaluated, a text file containing all the corresponding scores must be present in the input_folder_path
+A text file can be loaded by `ComputeMAP.py` as a FRS score file, if it contains as many lines as the number of morphed images and each line fulfills the following format:
+
+*morphID* *subjectID* *score1* *score2* ... *scoreN*
+
+where:
+- *morphID* is the unique identifier of a morphed image;
+- *subjectID* is the unique identifier of one of the subject involved in the morphed image generation process;
+- *score1* *score2* ... *scoreN* are the scores obtained by comparing the morphed image against all probe images of the subject.
 
 # FRS information needed
 
