@@ -1,5 +1,5 @@
 # Morph Attack Potential
-This repository contains the Python source code to compute the Morph Attack Potential (MAP) metric.
+This repository contains the Python source code to compute the Morph Attack Potential (MAP) metric introduced in [1].
 
 # Overview
 `MAP.py` provides the core functionalities to calculate the MAP metric.
@@ -26,7 +26,7 @@ Note that, to compute the MAP metric on multiple FRSs, the *morphID* and *subjec
 
 If something is not clear, we suggest to take a look to the score files stored into the `PaperScores` folder.
 
-# FRS information needed
+# FRS information file format
 
 To properly compute the MAP metric, a JSON file containing important information about all evaluated FRSs (*frs_info_file_path*) needs to be passed to the `ComputeMAP.py` script. 
 
@@ -52,4 +52,7 @@ python3 ComputeMAP PaperScores/D/ PaperScores/D/ PaperScores/FRS_Info.json
  ```bash
 python3 ComputeMAP PaperScores/PS/ PaperScores/PS/ PaperScores/FRS_Info.json
  ```
+# Citation
+Please cite the following paper in publications and works that use the MAP metric:
 
+[1] M. Ferrara, A. Franco, D. Maltoni, and C. Busch, "Morph Attack Potential", in proceedings of the *IEEE International Workshop on Biometrics and Forensics (IWBF)*, Salzburg, Austria, April 2022.
