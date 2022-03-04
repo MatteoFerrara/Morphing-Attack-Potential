@@ -1,6 +1,9 @@
 # Morph Attack Potential
 This repository contains the Python source code to compute the Morph Attack Potential (MAP) metric.
 
+# File overview
+???
+
 # How to run
 Clone the repository
 ```bash
