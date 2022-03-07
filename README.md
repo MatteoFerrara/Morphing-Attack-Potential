@@ -1,5 +1,5 @@
-# Morph Attack Potential
-This repository contains the Python source code to compute the Morph Attack Potential (MAP) metric introduced in [1].
+# Morphing Attack Potential
+This repository contains the Python source code to compute the Morphing Attack Potential (MAP) metric introduced in [1].
 
 # Overview
 `MAP.py` provides the core functionalities to calculate the MAP metric.
