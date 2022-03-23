@@ -6,7 +6,7 @@ This repository contains the Python source code to compute the Morphing Attack P
 
 `ComputeMAP.py` contains a script to compute the MAP metric given the following input parameters:
 - *input_folder_path* - the folder containing a text file for each Face Recognition Systems (FRSs) evaluated, containing the corresponding comparison scores;
-- *output_folder_path* - the folder path where the MAP values will be saved as text files;
+- *output_folder_path* - the folder path where the MAP values will be saved;
 - *frs_info_file_path* - the path of a JSON file containing information about the evaluated FRSs (see **FRS information file format** section below).
 
 `PaperScores` is a folder containing the scores used to generate the results reported in the MAP paper useful to test the Python scripts.
