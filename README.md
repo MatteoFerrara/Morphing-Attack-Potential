@@ -56,4 +56,4 @@ python3 ComputeMAP PaperScores/PS/ PaperScores/PS/ PaperScores/FRS_Info.json
 Please cite [1] in all publications and works that use this code.
 
 # Bibliography
-[1] M. Ferrara, A. Franco, D. Maltoni, and C. Busch, "Morph Attack Potential", in proceedings of the *IEEE International Workshop on Biometrics and Forensics (IWBF)*, Salzburg, Austria, April 2022.
+[1] M. Ferrara, A. Franco, D. Maltoni, and C. Busch, "Morphing Attack Potential", in proceedings of the *IEEE International Workshop on Biometrics and Forensics (IWBF)*, Salzburg, Austria, April 2022.
