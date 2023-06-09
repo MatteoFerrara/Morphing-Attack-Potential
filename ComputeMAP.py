@@ -39,6 +39,10 @@ def check_score_dict_consistency(frs_score_dict_list):
                     if subject_id not in frs_score_dict[morphed_image_name]:
                         print('Error: not all files contain the same subject attempts')
                         exit()
+                    else:
+                        if len(frs_score_dict_list[0][morphed_image_name][subject_id])!=len(frs_score_dict[morphed_image_name][subject_id]):
+                            print('Error: not all files contain the same number of scores for the morphed image {0} and the subject {1}'.format(morphed_image_name,subject_id))
+                            exit()
 
 def select_subset_from_frs_score_dict(frs_score_dict,subset_search_pattern):
     subset_frs_score_dict={}
