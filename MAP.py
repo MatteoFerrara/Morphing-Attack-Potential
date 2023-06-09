@@ -20,7 +20,7 @@ def compute_map_count(frs_score_dict_list,frs_thr_list,frs_is_similarity_list):
         sorted_frs_min_valid_attempt_count=np.sort(morph_frs_min_valid_attempt_count[morphed_idx])
         for frs_count in range(len(frs_score_dict_list)):
             min_valid_attempt_count=sorted_frs_min_valid_attempt_count[-1-frs_count]
-            for k in range(min_valid_attempt_count):
+            for k in range(min(overall_min_attempt_count,min_valid_attempt_count)):
                 map_count[k,frs_count]+=1
 
     return map_count
